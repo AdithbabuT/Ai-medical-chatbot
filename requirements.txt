@@ -4,12 +4,13 @@ altair==4.2.2
 langchain==1.2.9
 langchain-core==1.2.9
 langchain-community==1.2.9
-
 langchain-huggingface
 langchain-groq
 
-faiss-cpu
-sentence-transformers
+faiss-cpu==1.7.4
+sentence-transformers==2.2.2
 huggingface-hub
 python-dotenv
 
+torch==2.1.0+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
