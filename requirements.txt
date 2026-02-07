@@ -1,8 +1,10 @@
 streamlit==1.19.0
 altair==4.2.2
 
-langchain
-langchain-community
+langchain==1.2.9
+langchain-core==1.2.9
+langchain-community==1.2.9
+
 langchain-huggingface
 langchain-groq
 
@@ -10,3 +12,4 @@ faiss-cpu
 sentence-transformers
 huggingface-hub
 python-dotenv
+
