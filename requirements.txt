@@ -1,0 +1,12 @@
+langchain
+transformers
+huggingface-hub
+sentence-transformers
+faiss-cpu
+numpy
+pandas
+scikit-learn
+streamlit
+fastapi
+uvicorn
+python-dotenv
