@@ -1,16 +1,15 @@
 streamlit==1.19.0
 altair==4.2.2
 
-langchain==1.2.9
-langchain-core==1.2.9
-langchain-community==1.2.9
-langchain-huggingface
-langchain-groq
+# LangChain (stable combo)
+langchain==0.3.17
+langchain-core==0.3.33
+langchain-community==0.3.17
 
+# Embeddings & ML
+sentence-transformers==2.6.1
 faiss-cpu==1.7.4
-sentence-transformers==2.2.2
-huggingface-hub
-python-dotenv
 
-torch==2.1.0+cpu
---extra-index-url https://download.pytorch.org/whl/cpu
+# Utils
+python-dotenv
+torch==2.0.1
