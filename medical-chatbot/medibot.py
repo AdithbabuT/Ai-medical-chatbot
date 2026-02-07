@@ -5,7 +5,7 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.chains import RetrievalQA
 from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import PromptTemplate
-from langchain_huggingface import HuggingFaceEndpoint
+from langchain.llms import HuggingFaceEndpoint
 from langchain_groq import ChatGroq
 
 
