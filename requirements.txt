@@ -1,15 +1,10 @@
 streamlit==1.19.0
 altair==4.2.2
 
-# LangChain (LET PIP RESOLVE SUBPACKAGES)
-langchain==0.3.18
-
-# Vector store & embeddings
-sentence-transformers==2.6.1
-faiss-cpu==1.7.4
-
-# LLMs
+langchain==0.1.20
+langchain-core==0.1.53
 langchain-groq==0.1.2
 
-# Utils
+sentence-transformers==2.6.1
+faiss-cpu==1.7.4
 python-dotenv==1.0.1
