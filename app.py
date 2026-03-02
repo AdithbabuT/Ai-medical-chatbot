@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-
+from huggingface_hub import hf_hub_download
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.chains import RetrievalQA
 from langchain_community.vectorstores import FAISS
@@ -22,17 +22,24 @@ def get_vectorstore():
         model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
 
-    loader = PyPDFLoader("data/The_GALE_ENCYCLOPEDIA_of_MEDICINE_SECOND.pdf")  # <-- change this
-    documents = loader.load()
-
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=500,
-        chunk_overlap=50
+    # Download FAISS files from Hugging Face dataset repo
+    faiss_file = hf_hub_download(
+        repo_id="Adithbabu/medical-chatbot-vectorstore",
+        filename="vectorstore/db_faiss/index.faiss",
+        repo_type="dataset"
     )
 
-    texts = text_splitter.split_documents(documents)
+    pkl_file = hf_hub_download(
+        repo_id="Adithbabu/medical-chatbot-vectorstore",
+        filename="vectorstore/db_faiss/index.pkl",
+        repo_type="dataset"
+    )
 
-    db = FAISS.from_documents(texts, embedding_model)
+    db = FAISS.load_local(
+        os.path.dirname(faiss_file),
+        embedding_model,
+        allow_dangerous_deserialization=True
+    )
 
     return db
 
