@@ -25,13 +25,13 @@ def get_vectorstore():
     # Download FAISS files from Hugging Face dataset repo
     faiss_file = hf_hub_download(
         repo_id="Adithbabu/medical-chatbot-vectorstore",
-        filename="vectorstore/db_faiss/index.faiss",
+        filename="db_faiss/index.faiss",
         repo_type="dataset"
     )
 
     pkl_file = hf_hub_download(
         repo_id="Adithbabu/medical-chatbot-vectorstore",
-        filename="vectorstore/db_faiss/index.pkl",
+        filename="db_faiss/index.pkl",
         repo_type="dataset"
     )
 
