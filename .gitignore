@@ -1,0 +1,32 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large vectorstores & datasets
+vectorstore/
+data/*.pdf
+!data/sample.pdf
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+
+# OS
+.DS_Store
+Thumbs.db
