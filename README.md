@@ -1,7 +1,8 @@
 <div align="center">
 
-# 🩺 AI Medical Chatbot (Production RAG)
+# 🩺 AI Medical Chatbot
 
+[![Live Demo on Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Live%20Demo-FFD21E?style=for-the-badge&logoColor=black)](https://huggingface.co/spaces/Adithbabu/ai-medical-chatbot)
 [![CI](https://github.com/AdithbabuT/Ai-medical-chatbot/actions/workflows/ci.yml/badge.svg)](https://github.com/AdithbabuT/Ai-medical-chatbot/actions)
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![LangChain](https://img.shields.io/badge/LangChain-0.3-green.svg)](https://python.langchain.com/)
@@ -9,9 +10,9 @@
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](Dockerfile)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**A production-ready Retrieval-Augmented Generation (RAG) conversational AI system built with LangChain, FAISS Vector Database, HuggingFace sentence-transformers, and Groq high-speed LLM inference.**
+**A Retrieval-Augmented Generation (RAG) conversational AI system built with LangChain, FAISS Vector Database, HuggingFace sentence-transformers, and Groq LLM inference.**
 
-[Overview](#-overview) • [RAG Architecture](#-rag-architecture) • [Features](#-key-features) • [Quickstart](#-quickstart) • [Docker Deployment](#-docker-deployment) • [Testing](#-testing)
+[Live Demo](https://huggingface.co/spaces/Adithbabu/ai-medical-chatbot) • [Overview](#-overview) • [RAG Architecture](#-rag-architecture) • [Features](#-key-features) • [Quickstart](#-quickstart) • [Docker Deployment](#-docker-deployment) • [Testing](#-testing)
 
 </div>
 
@@ -123,7 +124,7 @@ Ai-medical-chatbot/
 ├── .env.example
 ├── .gitattributes
 ├── .gitignore
-├── Dockerfile                   # Production container definition
+├── Dockerfile                   # Docker container definition
 ├── LICENSE                      # MIT License
 ├── app.py                       # Streamlit interactive chat interface
 ├── pyproject.toml
